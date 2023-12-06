@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style/style.css">
 
     <title>Portifolio</title>
@@ -16,14 +17,36 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
                     <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Projetos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
     <main>
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="./assets/eu.jpeg" alt="Uma foto minha">
+                    </div>
+
+                    <div class="txt-sobre">
+                        <h2>Muito Prazer,<span>Sou Arthur Henrique</span></h2>
+                        <p>Tenho 17 anos de idade, gosto de RPG de mesa, jogos de tabuleiro/online (principalmente de jogos de estratégia e FPS), de programação e dp X (antigo twitter) para repostar memes. Sou uma pessoa sociavel e que sempre busca melhorar como pessoa, tanto no trabalho quanto na vida pessoal.</p>
+                        <p>Me formei no Cólegio Técnico da UFMG (COLTEC) como técnico em desenvolvimento de sistemas e lá aprendi a utilizar de forma pratica diversas linguagens de programação, como por exemplo: C, C#, Java, Javascript, php, python, shellscript, etc.</p>
+                        <div class="btn-social">
+                            <a href="https://github.com/AHChaves"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/arthur-henrique-2285a2268/"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://twitter.com/arthashi02"><button><i class="bi bi-twitter-x"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="especialidades">
             <div class="interface">
                 <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
@@ -48,6 +71,20 @@
                 </div>
             </div>
         </section>
+
+        <section class="projetos">
+            <div class="interface">
+                <h2 class="titulo">Meus <span>Projetos</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(assets/perfil2.png);">
+                        <div class="overlay">
+                            Projeto 1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 </body>

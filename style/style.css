@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;600;700&display=swap');
 
+
+/* ESTILO GERAL*/ 
 *{
     margin: 0;
     padding: 0;
@@ -35,6 +37,11 @@ h2.titulo span{
     color: #00ff08;
 }
 
+button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.2);
+}
+
 header{
     padding: 40px 4%;
 }
@@ -65,10 +72,58 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
+/*FIM ESTILO GERAL*/ 
 
-section.especialidades{
-    padding: 40px 15%;
+/* ESTILO SOBRE*/
+section.sobre{
+    padding: 80px 15%;
 }
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.sobre .img-sobre img{
+    width: 250px;
+}
+/* FIM ESTILO SOBRE*/
+
+/* ESTILO ESPECIALIDADES*/
+section.especialidades{
+    padding: 80px 15%;
+}
+
 section.especialidades .flex{
     gap: 60px;
 }
@@ -89,7 +144,51 @@ section.especialidades .flex{
 .especialidades .especialidades-box img{
     width: 56px;
 }
+
 .especialidades .especialidades-box h3{
     margin: 15px 0;
     color: #00ff08;
+}
+/* FIM ESTILO ESPECIALIDADES*/
+
+/* ESTILO PROJETOS*/
+section.projetos{
+    padding: 80px 15%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    position: relative;
+    border-radius: 40px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008d;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
 }
