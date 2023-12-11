@@ -48,7 +48,7 @@ header{
 
 header > .interface{
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-evenly;
 }
 
@@ -80,7 +80,7 @@ section.sobre{
 }
 
 section.sobre .flex{
-    align-items: center;
+    /*align-items: center;*/
     gap: 60px;
 }
 
@@ -153,7 +153,7 @@ section.especialidades .flex{
 
 /* ESTILO PROJETOS*/
 section.projetos{
-    padding: 80px 15%;
+    padding: 80px 7%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
@@ -191,4 +191,28 @@ section.projetos .flex{
 
 .overlay:hover{
     opacity: 1;
+}
+
+/* RESPONSIVIDADE*/
+
+@media screen and (max-width: 1020px){
+    
+    /* GERAL */
+    
+    .flex{
+        flex-direction: row;
+        flex-flow: wrap;
+        flex-direction: column;
+    }
+    
+    .interface{
+        width: 80%;
+    }
+    
+    /* CABEÇALHO */
+    .menu{
+        display: none;
+    }
+    
+    
 }
